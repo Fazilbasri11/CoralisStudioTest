@@ -24,8 +24,8 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
             <div class="container px-5">
-                <a class="navbar-brand" href="https://coralisstudio.com/"><span class="fw-bolder text-primary">Coralis
-                        Studio</span></a>
+                <a class="navbar-brand" href="https://coralisstudio.com/"><span class="fw-bolder text-primary">Ecampuz
+                    </span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation"><span
@@ -34,7 +34,8 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
 
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?= site_url('instansi') ?>">Data Instansi</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="<?= site_url('changepassword') ?>">Change
                                 Password</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?= site_url('logout') ?>">Log Out</a></li>
@@ -54,12 +55,14 @@
                             </div>
                             <div class="fs-3 fw-light text-muted">Hello Welcome Back <span style="font-weight: bold;">
                                     <?= $name ?>! </span></div>
-                            <h1 class="display-3 fw-bolder mb-3"><span class="text-gradient d-inline">in Coralis
-                                    Studio</span></h1>
+                            <h1 class="display-3 fw-bolder mb-3"><span class="text-gradient d-inline">in e-campuz</span>
+                            </h1>
                             <div class="fs-3 fw-light text-muted mb-5"> <?= session('user')['email'] ?></div>
                             <div
                                 class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="#">Resume</a>
+                                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
+                                    href="<?= site_url('instansi') ?>">Data
+                                    Instansi</a>
                                 <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="#">Projects</a>
                             </div>
                         </div>
@@ -396,7 +399,7 @@
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                 <div class="col-auto">
-                    <div class="small m-0">Copyright &copy; <a href="https://coralisstudio.com/">Coralis Studio</a> 2023
+                    <div class="small m-0">Copyright &copy; <a>ecampuz</a> 2023
                     </div>
                 </div>
                 <div class="col-auto">

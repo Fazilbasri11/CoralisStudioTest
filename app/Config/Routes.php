@@ -39,11 +39,21 @@ $routes->get('/login','LoginController::index');
 $routes->post('/login/submit', 'LoginController::authenticate');
 $routes->get('/logout', 'LoginController::logout', ['as' => 'logout']);
 
+
+
 $routes->get('forgot-password', 'ForgotPasswordController::index', ['as' => 'forgotPassword']);
 $routes->post('send-reset-link', 'ForgotPasswordController::sendResetLink', ['as' => 'sendResetLink']);
 
 $routes->get('/changepassword', 'UserController::index');
 $routes->post('/change-password', 'UserController::changePassword');
+
+$routes->get('instansi', 'Instansi::index');
+$routes->get('instansi/create', 'Instansi::create');
+$routes->post('instansi/store', 'Instansi::store');
+$routes->get('instansi/edit/(:num)', 'Instansi::edit/$1');
+$routes->post('instansi/update/(:num)', 'Instansi::update/$1');
+$routes->get('instansi/delete/(:num)', 'Instansi::delete/$1');
+
 
 
 
